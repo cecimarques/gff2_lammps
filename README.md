@@ -1,4 +1,4 @@
-(1) Make sure also you put the code for the dihedrals and duly talk about the need to tune more than one potential over the same dihedrals.
+(1) Make sure also you put the code for the dihedrals and duly talk about the need to tune more than one potential over the same dihedrals. Make sure also you say the code needs to be interfaced w/ the input file generated w/ the LigParGen (like I did for gff_lammps)
 
 SM
 
