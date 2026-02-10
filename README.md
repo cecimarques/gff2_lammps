@@ -8,3 +8,5 @@ SM
 - it might be worth also putting some of the step_xxx files !
 
 (2) Average vlues of molar density, varsigma and upsilon (and standard error) for all compounds at all \(P_{zz}\) values considered in the MD simulation is made available as further supplemental material. The result of the FFT of the VACF at specific pressure conditions and the hydrostatic limits (average value only, to avoid confusion w/ ppl thinking we ran several simulations) for all compounds studied in our work is also made available. 
+
+(3) atom types for OPLS-AA (no need for CGenFF)
