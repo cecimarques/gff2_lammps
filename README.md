@@ -7,4 +7,4 @@ SM
 - create a folder with *all* final_pos.dat files for each compound within both force fields so that the person can access the parameters ! PS: this should match the simulations in table S1.
 - it might be worth also putting some of the step_xxx files !
 
-(2) Values of molar density, \(\Bigl(\frac{\partial\rho}{\partial P_{zz}}\Bigl)_{T}\) and \(\Bigl(\frac{\partial\bar{V}}{\partial P_{zz}}\Bigl)_{T}\) for all compounds at all \(P_{zz}\) values considered in the MD simulation is made available as further supplemental material. The result of the FFT of the VACF at specific pressure conditions and the hydrostatic limits for all compounds studied in our work is also made available. 
+(2) Average vlues of molar density, varsigma and upsilon (and standard error) for all compounds at all \(P_{zz}\) values considered in the MD simulation is made available as further supplemental material. The result of the FFT of the VACF at specific pressure conditions and the hydrostatic limits (average value only, to avoid confusion w/ ppl thinking we ran several simulations) for all compounds studied in our work is also made available. 
