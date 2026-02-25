@@ -34,9 +34,8 @@ dihedral_style  charmmfsw
 special_bonds   charmm
 improper_style  harmonic
 
- -----------------------------------------------------------------------------------------------------------------------------
 d) Finally, for impropers, the code simply outputs the list of atom types underlying each improper declared in the "Impropers" section in the 1-molecule LAMMPS data file obtained from LigParGen. It is responsibility of the user to see, based on the sequence of atom types underlying each improper, if it is necessary to set an improper potential for any of the impropers by searching in the ffimproper file. Note that adaptations in terms of changes in potential form from GROMACS-to-LAMMPS and unit conversion will also need to be done by the user.
 
 Hope you can find it useful !
 
-- Cecilia Alvares
+Cecilia Alvares
