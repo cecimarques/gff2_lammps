@@ -5,7 +5,7 @@ Here you can find a python code (namely code.py) built for finding the CGenFF pa
 The files gmx.top, ffnonbonded.itp, ffbonded.itp and dra_ffbonded.itp found in this directory together with the python code were taken from https://cgenff.com/ by using as input a .mol2 file for bezene (this can be obtained, for example, from https://charmm-gui.org/?doc=input/ligandrm). The three latter files were used to build input files required by code.py, while information of the gmx.top file is needed to as a direct input in the file (see below).
 
 INPUT FILES REQUIRED BY THE PYTHON CODE (9 in total):
-- ffnonbonded : consists of a straightforward copy-paste of the [ atomtypes ] section of the ffnonbonded.itp file.
+- ffnonbonded : consists of a straightforward copy-paste of the [ atomtypes ] section of the ffnonbonded.itp file. Note that you may delete "unusual" atom types that appear listed, such as for water models and so on.
 - ffpairtype : consists of a straightforward copy-paste of the [ pairtypes ] section of the ffnonbonded.itp file.
 - ffbond : consists of a straightforward copy-paste of the [ bondtypes ] section of the ffbonded.itp and (if any) of the dra_ffbonded.itp files.
 - ffangle : consists of a straightforward copy-paste of the [ angletypes ] section of the ffbonded.itp and (if any) of the dra_ffbonded.itp files.
