@@ -24,19 +24,14 @@ c) The code reads the "bonds", "ffbond", "angles", "ffangle", "dihedrals", "ffdi
 d) You need to run the code dihedral_solution_CGenFF.py. This code does several things: first, it tackles the deletion of repeated lines mentioned in item c for the dihedrals. Secondly it will identify lines in the dihedralcoeff that concern a same dihedral type but have different parameters, assign these new dihedral types and then repeat the dihedral of the old type in the Dihedrals section while assigning them this new type: as it turns out, CGenFF requires in some cases that more than one potential of the form given in https://docs.lammps.org/dihedral_charmm.html is tuned for a *same* dihedral, which I am tackling as previously mentioned. Thirdly, the code is going to identify if dihedral potential parameters is missing for a given dihedral type, which should be either (i) due to the sequence of atom types having a "X" in the ffdihedral file due to the specific atom type being unimportant for the parameters *OR* (ii) due to no dihedral for the given specific sequence of atom types not existing, case in which potentials with force constants equal to 0 can be tuned. Fourthly, the code sets the "w" parameter for each dihedral potential of the form given in https://docs.lammps.org/dihedral_charmm.html accordingly: these must be always 1 except for dihedral types that share the 1 and 4 atoms with another dihedral types (this can happen in cyclic molecules or, obviously, in case we have more than one dihedral type tuned over a same dihedral sequence).
 
 The .py code takes care of all necessary unit conversions required in the process of transforming GROMACS potential parameters to LAMMPS potential parameters for a LAMMPS input script that contemplates units "real". It also accounts for the differences in the potential form as implemented in GROMACS and LAMMPS (e.g., sometimes a pre-factor of 1/2 exists). More specifically, the parameters are set to go along with an input script that cherishes the following setup:
-pair_style      lj/charmmfsw/coul/long 10 12
 
+pair_style      lj/charmmfsw/coul/long 10 12
 kspace_style    pppm 1e-6
 
-
 bond_style      harmonic
-
 angle_style     charmm
-
 dihedral_style  charmmfsw
-
 special_bonds   charmm
-
 improper_style  harmonic
 
  -----------------------------------------------------------------------------------------------------------------------------
