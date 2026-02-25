@@ -25,7 +25,7 @@ d) You need to run the code dihedral_solution_CGenFF.py. This code does several 
 
 The .py code takes care of all necessary unit conversions required in the process of transforming GROMACS potential parameters to LAMMPS potential parameters for a LAMMPS input script that contemplates units "real". It also accounts for the differences in the potential form as implemented in GROMACS and LAMMPS (e.g., sometimes a pre-factor of 1/2 exists). More specifically, the parameters are set to go along with an input script that cherishes the following setup:
 
-pair_style      lj/charmmfsw/coul/long 10 12 '\n'
+pair_style      lj/charmmfsw/coul/long 10 12 
 kspace_style    pppm 1e-6
 
 bond_style      harmonic
